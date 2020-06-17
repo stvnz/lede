@@ -16,7 +16,7 @@ jobs:
 
   build_openwrt:
 
-    name: Build OpenWrt and release
+    name: Build OpenWrt
     runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
@@ -150,9 +150,9 @@ jobs:
           CONFIG_PACKAGE_luci-app-webadmin=y
           # CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
-          CONFIG_PACKAGE_luci-app-statistics=y
-          CONFIG_PACKAGE_luci-app-transmission=y
-          CONFIG_PACKAGE_luci-app-vlmcsd=y
+          # CONFIG_PACKAGE_luci-app-statistics=y
+          # CONFIG_PACKAGE_luci-app-transmission=y
+          # CONFIG_PACKAGE_luci-app-vlmcsd=y
           EOF
 
           # LuCI主题:
